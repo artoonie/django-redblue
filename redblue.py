@@ -1,2 +1,0 @@
-curl -i -X GET \
-         "https://graph.facebook.com/v2.9/me/friends?access_token=EAACEdEose0cBAMZBBqPFYe1vl9ZCgpRqruX4ZBhw7WaywR1XBoBubItKZA7ZAHs4TUmbDhucyZBqTjqBFrTCmBBwKdltJTPEgQsw6LQrZAYsy3Q9DIhamGydLjahBR6lTwe3eQ68cWP5vkATYVsAMNZBtGXGcHQWBNt2U87SwH2FooDPsY7MQodzU4VgvEgBbANxg17MSHWf0a2ImRZA6IJXiGBW4lIZCiZBDMZD"
