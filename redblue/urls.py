@@ -19,7 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^fbconn/', include('fbconn.urls')),
-    (r'^facebook/', include('django_facebook.urls')),
-    (r'^accounts/', include('django_facebook.auth_urls')),
+    url(r'^facebook/', include('django_facebook.urls')),
+    url(r'^accounts/', include('django_facebook.auth_urls')),
 
 ]

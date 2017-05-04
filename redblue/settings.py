@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_facebook',
+    'fbconn',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,24 @@ STATIC_URL = '/static/'
 
 FACEBOOK_APP_ID = str('414966148885296')
 FACEBOOK_APP_SECRET = str('745b6342c67b43fda7560009fee897b2')
+FACEBOOK_DEFAULT_SCOPE = ['email', 'user_friends']
+#FACEBOOK_CELERY_STORE = True
+#FACEBOOK_CELERY_TOKEN_EXTEND = True
+FACEBOOK_STORE_FRIENDS = True
+FACEBOOK_STORE_LIKES = False
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+    },
+}
